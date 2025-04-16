@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MatrixZero" Class="TIMDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.qryComputerSettings" Member="ComputerSettingQueries">
+    <Type Name="ComputerSettingQuery">
+      <Column Name="ComputerNameID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ComputerSettingID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ComputerSettingDescription" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ComputerDetailSettingID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ComputerDetailSettingDescription" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CanBeEditedFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSettingDetails" Member="SettingDetails">
+    <Type Name="SettingDetail">
+      <Column Name="SettingID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SettingDetailID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblComputerSettings" Member="ComputerSettings">
+    <Type Name="ComputerSetting">
+      <Column Name="ComputerNameID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ComputerSettingID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ComputerDetailSettingID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSubsidiaries" Member="Subsidiaries">
+    <Type Name="Subsidiary">
+      <Column Name="SubsidiaryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SubsidiaryName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Street" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ZIP" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="BankName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAssemblyTypes" Member="AssemblyTypes">
+    <Type Name="AssemblyType">
+      <Column Name="[Assembly]" Member="Assembly" Type="System.String" DbType="NChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Namespace" Type="System.String" DbType="NChar(250) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Singleton" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.qryConfigDevicesDetailsEmployees" Member="ConfigDevicesDetailsEmployees">
+    <Type Name="ConfigDevicesDetailsEmployee">
+      <Column Name="DeviceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RequiredSoftwareComponent" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="SubsidiaryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActivatedFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DeviceKeyTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.qryConfigDevicesDetailsExternal" Member="ConfigDevicesDetailsExternals">
+    <Type Name="ConfigDevicesDetailsExternal">
+      <Column Name="DeviceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RequiredSoftwareComponent" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="SubsidiaryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActivatedFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DeviceKeyTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.qryConfigDevicesDetailsInHouse" Member="ConfigDevicesDetailsInHouses">
+    <Type Name="ConfigDevicesDetailsInHouse">
+      <Column Name="DeviceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RequiredSoftwareComponent" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="SubsidiaryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActivatedFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DeviceKeyTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDevices" Member="Device">
+    <Type Name="Device">
+      <Column Name="DeviceID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DeviceKeyTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SupportsWaiterLockFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Device_DevicesDetail" Member="DevicesDetail" ThisKey="DeviceID" OtherKey="DeviceID" Type="DevicesDetail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblDevicesDetails" Member="DevicesDetail">
+    <Type Name="DevicesDetail">
+      <Column Name="DeviceDetailID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DeviceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RequiredSoftwareComponent" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="Device_DevicesDetail" Member="Device" ThisKey="DeviceID" OtherKey="DeviceID" Type="Device" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblServiceEmployeeGroups" Member="ServiceEmployeeGroups">
+    <Type Name="ServiceEmployeeGroup">
+      <Column Name="ServiceEmployeeGroupID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ColorID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ActivatedFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="ServiceEmployeeGroup_ServiceEmployee" Member="ServiceEmployees" ThisKey="ServiceEmployeeGroupID" OtherKey="ServiceEmployeeGroupID" Type="ServiceEmployee" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblServiceEmployees" Member="ServiceEmployees">
+    <Type Name="ServiceEmployee">
+      <Column Name="ServiceEmployeeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PersonID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceEmployeeGroupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DepartmentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PrescriptionFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="ADLoginName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ActivatedFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreatePersonID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ChangePersonID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ChangeDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="RatePerMinute" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DisplayName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="ServiceEmployeeGroup_ServiceEmployee" Member="ServiceEmployeeGroup" ThisKey="ServiceEmployeeGroupID" OtherKey="ServiceEmployeeGroupID" Type="ServiceEmployeeGroup" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.qryServiceEmployees" Member="QryServiceEmployees" AccessModifier="Internal">
+    <Type Name="QryServiceEmployee" AccessModifier="Internal">
+      <Column Name="ServiceEmployeeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PersonID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ServiceEmployeeGroupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DepartmentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PrescriptionFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="ADLoginName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ActivatedFlag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SecondName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(155)" CanBeNull="true" />
+      <Column Name="NameAndDescription" Type="System.String" DbType="VarChar(155)" CanBeNull="true" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sex" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ServiceEmployeeGroupDescription" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ServiceEmployeeGroupColorID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ServiceEmployeeGroupActivatedFlag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DepartmentDescription" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ServiceEmployeeAndPersonActivatedFlag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CheckedInFlag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RatePerMinute" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DisplayName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StandardName" Type="System.String" DbType="VarChar(155)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.spSearchElectronicKey" Method="spSearchElectronicKey">
+    <Parameter Name="DeviceID" Parameter="deviceID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ECheckInID" Parameter="eCheckInID" Type="System.String" DbType="NVarChar(4000)" />
+    <Parameter Name="SubsidiaryID" Parameter="subsidiaryID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PersonID" Parameter="personID" Type="System.Int64" DbType="BigInt" Direction="InOut" />
+    <Parameter Name="ServiceEmployeeID" Parameter="serviceEmployeeID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="RangeOfCheckInIDsID" Parameter="rangeOfCheckInIDsID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="CheckInID" Parameter="checkInID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spDailyCheckExecuteManually" Method="spDailyCheckExecuteManually">
+    <Parameter Name="strComputerNameID" Type="System.String" DbType="NVarChar(4000)" />
+    <Parameter Name="blnDailyCheckWasExecuted" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Parameter Name="strError" Type="System.String" DbType="NVarChar(4000)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

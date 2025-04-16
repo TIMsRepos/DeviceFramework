@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.375, 13" name="TIMDataClasses">
+  <DataContextMoniker Name="/TIMDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="736582bd-66dd-41f1-926f-fdc1494835a5" absoluteBounds="0.5, 0.625, 2.75, 2.1554996744791666">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/ComputerSettingQuery" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10cf924e-9444-44ae-b2c2-bfec94f0dc03" absoluteBounds="0.515, 1.085, 2.7199999999999998, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31a8381c-242e-4234-a906-e7e26169f77d" absoluteBounds="0.5, 3, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/SettingDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e447739a-888b-48dc-93f6-68315412dbc3" absoluteBounds="0.515, 3.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="102c95bd-e09a-47d2-bf8e-35a5fc20c1a3" absoluteBounds="0.5, 6.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/ComputerSetting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ca4ddbc-b84f-4e0f-8d2b-577079260e89" absoluteBounds="0.51499999999999968, 7.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24a4d9e4-f6ff-4185-9009-666183c0783e" absoluteBounds="3.5, 0.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/Subsidiary" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a336a2ee-8818-4d7c-96f1-515cd79d360f" absoluteBounds="3.5149999999999997, 1.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d1f4e2cd-b2c1-4c10-be58-3de56eb4dee2" absoluteBounds="0.5, 4.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/AssemblyType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="84421ea6-366e-49cf-b2df-d6f77767cf95" absoluteBounds="0.51500000000000012, 5.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="01564987-f549-4d4a-a625-06edba1b6ca1" absoluteBounds="5.75, 0.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/ConfigDevicesDetailsEmployee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6780f0b5-b60c-4550-bed6-a880031ec449" absoluteBounds="5.7650000000000006, 1.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3808088c-8bfa-418d-b660-9816570eb48b" absoluteBounds="10.125, 0.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/ConfigDevicesDetailsExternal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b6c32cb-7a07-4236-8fdf-af9c332c53ed" absoluteBounds="10.14, 1.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e6aa61c6-678c-425a-a52d-e3cc43949ab9" absoluteBounds="8, 0.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/ConfigDevicesDetailsInHouse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4c8c4f1-951b-4b80-b80a-767522a6423f" absoluteBounds="8.015, 1.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8eb721b-cbc3-4bfa-867f-9e658513e7c0" absoluteBounds="5.75, 3.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/Device" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f98e171-d477-4be7-982b-769ce4e3f809" absoluteBounds="5.765, 3.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ab9b35e-1429-4ceb-8587-62f29f0d1f0d" absoluteBounds="8.25, 3.125, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/DevicesDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d373e3e-6276-44dc-ac6e-055e916eb5f6" absoluteBounds="8.265, 3.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.75 : 3.91429768880208); (8.25 : 3.91429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TIMDataClassesDataContext/Device/Device_DevicesDetail" />
+      <nodes>
+        <classShapeMoniker Id="a8eb721b-cbc3-4bfa-867f-9e658513e7c0" />
+        <classShapeMoniker Id="0ab9b35e-1429-4ceb-8587-62f29f0d1f0d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="be15bd5e-0875-4b43-9f7c-0cfb56a079ce" absoluteBounds="8.25, 5.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/ServiceEmployeeGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58f47ed1-5dfe-4d54-b275-a0bea01785b6" absoluteBounds="8.265, 5.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94119e5a-8731-4f0e-ad31-035562c812f9" absoluteBounds="5.75, 5.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/ServiceEmployee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f77c3d60-c5fd-4a65-bbdf-73696883d0a7" absoluteBounds="5.765, 5.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 6.28929768880208); (7.75 : 6.28929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TIMDataClassesDataContext/ServiceEmployeeGroup/ServiceEmployeeGroup_ServiceEmployee" />
+      <nodes>
+        <classShapeMoniker Id="be15bd5e-0875-4b43-9f7c-0cfb56a079ce" />
+        <classShapeMoniker Id="94119e5a-8731-4f0e-ad31-035562c812f9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c74762ce-8d5e-4988-af2b-51949537792d" absoluteBounds="8.25, 7.375, 2, 5.4246240234375">
+      <DataClassMoniker Name="/TIMDataClassesDataContext/QryServiceEmployee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9888109a-3407-4806-b6a4-33ef384b290f" absoluteBounds="8.265, 7.8350000000000009, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

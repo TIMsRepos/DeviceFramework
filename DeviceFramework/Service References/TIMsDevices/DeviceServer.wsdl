@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:i0="http://schemas.meridianspa.de/TIM/DeviceFramework" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="DeviceServer" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IDeviceServer_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="922337203685477" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://schemas.meridianspa.de/TIM/DeviceFramework" location="http://localhost:54321/DeviceFramework?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="NetTcpBinding_IDeviceServer" type="i0:IDeviceServer">
+    <wsp:PolicyReference URI="#NetTcpBinding_IDeviceServer_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddIDeviceClient">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/AddIDeviceClient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIDeviceClient2">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/AddIDeviceClient2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceNames">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/GetDeviceNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Request">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/Request" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnblockLockerKey">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/UnblockLockerKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FireMediaDetected">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/FireMediaDetected" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FireMediaDetected2">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/FireMediaDetected2" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FireMediaRemoved">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/FireMediaRemoved" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FireMediaRemoved2">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/FireMediaRemoved2" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FireMissingMedia">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/FireMissingMedia" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseResources">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/ReleaseResources" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsFloating">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/IsFloating" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pong">
+      <soap12:operation soapAction="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/Pong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DeviceServer">
+    <wsdl:port name="NetTcpBinding_IDeviceServer" binding="tns:NetTcpBinding_IDeviceServer">
+      <soap12:address location="net.tcp://localhost:54320/DeviceFramework" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:54320/DeviceFramework</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

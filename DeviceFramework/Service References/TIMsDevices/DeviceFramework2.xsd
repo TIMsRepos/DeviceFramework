@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Communication" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Communication" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Common" />
+  <xs:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="MediaDetectedEventArgs">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System" base="q1:EventArgs">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CheckInID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Date" type="xs:long" />
+          <xs:element minOccurs="0" name="DeviceID" type="xs:int" />
+          <xs:element minOccurs="0" name="DeviceName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ECheckInID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PersonID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="RangeOfCheckInIDsID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ServiceEmployeeID" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MediaDetectedEventArgs" nillable="true" type="tns:MediaDetectedEventArgs" />
+  <xs:complexType name="MediaDetectedEventArgs2">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System" base="q2:EventArgs">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CheckInID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Date" type="xs:long" />
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Common" minOccurs="0" name="DeviceCapabilities" type="q3:DeviceCapabilities" />
+          <xs:element minOccurs="0" name="DeviceFrameworkDeviceID" type="xs:int" />
+          <xs:element minOccurs="0" name="DeviceID" type="xs:int" />
+          <xs:element minOccurs="0" name="DeviceName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ECheckInID" nillable="true" type="xs:string" />
+          <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Payload" nillable="true" type="q4:ArrayOfKeyValueOfPayloadsanyTypeiSneAivP" />
+          <xs:element minOccurs="0" name="PersonID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="RangeOfCheckInIDsID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ServiceEmployeeID" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MediaDetectedEventArgs2" nillable="true" type="tns:MediaDetectedEventArgs2" />
+  <xs:complexType name="MediaRemovedEventArgs">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MediaDetectedEventArgs">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MediaRemovedEventArgs" nillable="true" type="tns:MediaRemovedEventArgs" />
+  <xs:complexType name="MediaRemovedEventArgs2">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MediaDetectedEventArgs2">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MediaRemovedEventArgs2" nillable="true" type="tns:MediaRemovedEventArgs2" />
+</xs:schema>

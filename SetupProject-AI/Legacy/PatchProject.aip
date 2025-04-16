@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="10.3" version="11.3" Modules="patch" RootPath="." Language="en" Id="{7D6F5A43-3AD5-4C4D-B11E-9AED57799B25}">
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW DigitalCertificate="..\..\TIM-Updater\TIMsSignature.pfx" TimeStampUrl="http://timestamp.verisign.com/scripts/timstamp.dll" SignerDescription="[|Subject]" SignOptions="7" SignTool="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="MspValidation.aip" Path="&lt;AI_FRAGS&gt;MspValidation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MspImageFamiliesComponent">
+    <ROW Family="Family" MediaDiskId="2" FileSequenceStart="24"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MspPropertiesComponent">
+    <ROW Name="AllowProductCodeMismatches" Value="1"/>
+    <ROW Name="AllowProductVersionMajorMismatches" Value="1"/>
+    <ROW Name="DontRemoveTempFolderWhenFinished" Value="0"/>
+    <ROW Name="IncludeWholeFilesOnly" Value="1"/>
+    <ROW Name="ListOfTargetProductCodes" Value="*"/>
+    <ROW Name="PatchOutputFileName" Value="TIMs-DevicesV1.11.6"/>
+    <ROW Name="PatchOutputFolder" Value="."/>
+    <ROW Name="PatchSourceList" Value="PatchSourceList"/>
+    <ATTRIBUTE name="AdminImgsFolder" value="."/>
+    <ATTRIBUTE name="Author" value="TIM"/>
+    <ATTRIBUTE name="Comments" value="This patch contains the logic and data required to modify &lt;product name&gt;."/>
+    <ATTRIBUTE name="KeepPCPFile" value="false"/>
+    <ATTRIBUTE name="Subject" value="TIM&apos;s-DevicesV1.11.6"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MspTargetImagesComponent">
+    <ROW Target="TIMsDevicORI" MsiPath="TIM-DeviceFramework-SetupFilesV1.11.5\TIMs-Devices.msi" Upgraded="TIMsDevicUPD" Order="0" ProductValidateFlags="0x00000120" IgnoreMissingSrcFiles="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MspUpgradedImagesComponent">
+    <ROW Upgraded="TIMsDevicUPD" MsiPath="TIM-DeviceFramework-SetupFilesV1.11.6\TIMs-Devices.msi" Family="Family"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PatchMetadataComponent">
+    <ROW Property="AllowRemoval" Value="1"/>
+    <ROW Property="DisplayName" Value="TIM&apos;s-DevicesV1.11.6"/>
+    <ROW Property="Classification" Value="Update"/>
+    <ROW Property="Description" Value="Update für TIM-Administrator.exe.config"/>
+    <ROW Property="TargetProductName" Value="DeviceFramework"/>
+    <ROW Property="MoreInfoURL" Value="http://www.example.com"/>
+  </COMPONENT>
+</DOCUMENT>

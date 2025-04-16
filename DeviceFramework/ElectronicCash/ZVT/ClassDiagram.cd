@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Each APDU (Application Protol Data Unit) consists of a Control-field which specifies the command, a length-field which contains the byte length of the current command, and the data-block containing all parameters and values of the current command.">
+    <Position X="3.311" Y="0.5" Height="1.51" Width="1.741" />
+  </Comment>
+  <Comment CommentText="A command control-field always consists of two bytes which exactly specify which command to execute">
+    <Position X="7.186" Y="0.588" Height="1.358" Width="0.98" />
+  </Comment>
+  <Comment CommentText="The BitmapHelper uses the ZVTCommands to get the bytes for the zvt terminal commands. All commands are explained within the ZVTCommand Enum">
+    <Position X="6.571" Y="12.797" Height="1.054" Width="1.497" />
+  </Comment>
+  <Comment CommentText="The StateInfos are responses from the terminal which contain further details for the transaction, like the card details in the PostStateInfo">
+    <Position X="0.848" Y="12.166" Height="0.841" Width="1.7" />
+  </Comment>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Blocks.Abstract.APDU">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Blocks\Abstract\APDU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Blocks.Abstract.ControlField">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAEgIAAAAAAAAAAAIAAAAAIAAAAAiA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Blocks\Abstract\ControlField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Blocks.CommandAPDU">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAACAIAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Blocks\CommandAPDU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Blocks.ResponseAPDU">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAACAIAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Blocks\ResponseAPDU.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Blocks.CommandControlField">
+    <Position X="4.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Blocks\CommandControlField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Blocks.ResponseControlField">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Blocks\ResponseControlField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Terminals.PaymentTerminal">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABEAAAAAAAAAAAUEIAAAIAAAABIAgCAAAAAARIAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Terminals\PaymentTerminal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.TransportLayers.ComTransportLayer">
+    <Position X="10.75" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAAIAAAdACAAAAAAgAAAEAAAAAAACCAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\TransportLayers\ComTransportLayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.TransportLayers.TransportLayerException" Collapsed="true">
+    <Position X="4.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\TransportLayers\TransportLayerException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.ZVTException" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\ZVTException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.ErrorMessages" Collapsed="true">
+    <Position X="4.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\ErrorMessages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Terminals.Events.StateInfoEventArgs">
+    <Position X="2.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAgAIA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Terminals\Events\StateInfoEventArgs.cs</FileName>
+      <NewMemberFileName>ElectronicCash\ZVT\Terminals\Events\InterimStateInfoEventArgs.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Terminals.Events.InterimStateInfoEventArgs">
+    <Position X="1.25" Y="14" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Terminals\Events\InterimStateInfoEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Terminals.Events.PostStateInfoEventArgs">
+    <Position X="4" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUCUAAIAACQAAAQgBWhQoASADAgACEQSCAAAsAAAAAQ=</HashCode>
+      <FileName>ElectronicCash\ZVT\Terminals\Events\PostStateInfoEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Terminals.Exceptions.TerminalException" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Terminals\Exceptions\TerminalException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Terminals.Exceptions.TerminalWrongConfigException" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Terminals\Exceptions\TerminalWrongConfigException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Terminals.Exceptions.TerminalCanceledException" Collapsed="true">
+    <Position X="2.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Terminals\Exceptions\TerminalCanceledException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Terminals.Exceptions.TerminalNotReadyException" Collapsed="true">
+    <Position X="4.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Terminals\Exceptions\TerminalNotReadyException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Terminals.Exceptions.TerminalNotAvailableException" Collapsed="true">
+    <Position X="6.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Terminals\Exceptions\TerminalNotAvailableException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Helper.CRCHelper" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAACAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Helper\CRCHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Helper.BCDCodeHelper" Collapsed="true">
+    <Position X="2.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgIAAAAAAAAAAAAAAEAAAQAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Helper\BCDCodeHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Helper.TraceHelper" Collapsed="true">
+    <Position X="6.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAAAAAAgAAACAAAAACgBAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Helper\TraceHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.ZVTEnums">
+    <Position X="8.25" Y="7.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="TIM.Devices.Framework.ElectronicCash.ZVT.ZVTEnums.ZVTCommands">
+        <TypeIdentifier>
+          <NewMemberFileName>ElectronicCash\ZVT\ZVTEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="TIM.Devices.Framework.ElectronicCash.ZVT.ZVTEnums.SpecialChars" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ElectronicCash\ZVT\ZVTEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="TIM.Devices.Framework.ElectronicCash.ZVT.ZVTEnums.PaymentTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ElectronicCash\ZVT\ZVTEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="TIM.Devices.Framework.ElectronicCash.ZVT.ZVTEnums.PaymentConfigTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ElectronicCash\ZVT\ZVTEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="TIM.Devices.Framework.ElectronicCash.ZVT.ZVTEnums.Currencies" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ElectronicCash\ZVT\ZVTEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="TIM.Devices.Framework.ElectronicCash.ZVT.ZVTEnums.ConfigByte" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ElectronicCash\ZVT\ZVTEnums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\ZVTEnums.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Helper.BitmapHelper" Collapsed="true">
+    <Position X="6.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Helper\BitmapHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TIM.Devices.Framework.ElectronicCash.ZVT.Helper.TraceEntry" Collapsed="true">
+    <Position X="6.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAAAAAAAAQA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Helper\TraceEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TIM.Devices.Framework.ElectronicCash.ZVT.Terminals.ITerminal">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAQEAAAAIAAAABIAAAAAAAAAQIAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\Terminals\ITerminal.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TIM.Devices.Framework.ElectronicCash.ZVT.TransportLayers.ITransportLayer">
+    <Position X="10.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAIAAAVAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ElectronicCash\ZVT\TransportLayers\ITransportLayer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

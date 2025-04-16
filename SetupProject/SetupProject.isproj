@@ -1,0 +1,60 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<PropertyGroup>
+		<!-- Select a Product Configuration -->
+		<InstallShieldProductConfiguration>Express</InstallShieldProductConfiguration>
+		<!-- Select a Visual Studio Configuration / InstallShield Release -->
+		<Configuration>Debug</Configuration>
+		<InstallShieldRelease>$(Configuration)</InstallShieldRelease>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- The InstallShieldProject item selects the project to build -->
+		<InstallShieldProject Include="$(MSBuildProjectDirectory)\$(MSBuildProjectName).isl"/>
+		<!-- The InstallShieldReleaseFlags sets Release Flags -->
+		<!--<InstallShieldReleaseFlags Include=""/>-->
+		<!-- The InstallShieldMergeModulePath specifies what directories are
+		searched for Merge Modules -->
+		<!--<InstallShieldMergeModulePath Include=""/>-->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The ProjectReference items refer to any Visual Studio solutions you want to automatically probe for Project Output Groups.  -->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The TaggedOutputs items allow you to explicitly add extra files to output groups. Each item must include both Name and OutputGroup, as well as TargetPath metadata values. -->
+		<!--<TaggedOutputs Include="C:\My Test Exe.exe">
+			<Name>My Test Project</Name>
+			<OutputGroup>Primary output</OutputGroup>
+			<TargetPath>My Test Exe.exe</TargetPath>
+		</TaggedOutputs> -->
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2012SpringLimited\InstallShield.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="..\EpsonInstaller\EpsonInstaller.csproj">
+			<Name>EpsonInstaller</Name>
+			<Project>{B0B37294-ED3B-4AD6-BFCB-E3B2DB78DFB8}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\FeigIDRWA02\FeigIDRWA02.csproj">
+			<Name>FeigIDRWA02</Name>
+			<Project>{F17EDEF4-A18A-490D-A552-B044E76E333A}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\GantnerFunWriter5200\GantnerFunWriter5200.csproj">
+			<Name>GantnerFunWriter5200</Name>
+			<Project>{BAA6C03B-CA4C-4573-AC9B-9F37FE93B4BE}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\GigatekPCR300M\GigatekPCR300M.csproj">
+			<Name>GigatekPCR300M</Name>
+			<Project>{7D1E4B4B-5159-4521-9884-54CAF9649BED}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\MotorolaDS6707\MotorolaDS6707.csproj">
+			<Name>MotorolaDS6707</Name>
+			<Project>{B06A8820-FE68-4E2A-9351-F1C1D402909C}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\SetHttpCfg\SetHttpCfg.csproj">
+			<Name>SetHttpCfg</Name>
+			<Project>{8BDE9FEF-9D2A-4B44-AC40-3A44DAE4FF7A}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\TIMs-Devices\TIMs-Devices.csproj">
+			<Name>TIMs-Devices</Name>
+			<Project>{D4E8F0EF-B430-4F11-B6B0-03DEAFA5E8FB}</Project>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

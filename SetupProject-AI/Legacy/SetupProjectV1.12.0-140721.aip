@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="10.0" version="11.3" Modules="enterprise" RootPath="." Language="de" Id="{3402293E-8BF1-49AD-84F9-1385B37DA1E4}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_ThemeStyle" Value="default" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="Diese Datenbank ist korrekt und enthält nötige Daten um [|ProductName] zu installieren." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="TIM"/>
+    <ROW Property="ARPPRODUCTICON" Value="msdn.exe" Type="8"/>
+    <ROW Property="AspNetVersion" Value="4.0.30319.0"/>
+    <ROW Property="InstanceId" Value="#0"/>
+    <ROW Property="Manufacturer" Value="TIM"/>
+    <ROW Property="ProductCode" Value="1031:{924EE2CB-3AB2-45DA-9F10-B818F5397987} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1031"/>
+    <ROW Property="ProductName" Value="TIM&apos;s Devices"/>
+    <ROW Property="ProductVersion" Value="1.12.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{7A1708B8-1C13-448B-8D05-4821068E6B27}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="Build:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="Build:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="Build:Windows 2000, Windows 2000 Service Pack 1, Windows 2000 Service Pack 2, Windows 2000 Service Pack 3, Windows 2000 Service Pack 4, Windows XP x86, Windows XP x86 Service Pack 1, Windows XP x86 Service Pack 2, Windows XP x86 Service Pack 3, Windows Server 2003 x86, Windows Server 2003 x86 Service Pack 1, Windows Server 2003 x86 Service Pack 2, Windows Vista x86, Windows Vista x86 Service Pack 1, Windows Vista x86 Service Pack 2, Windows Server 2008 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="Build:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="Build:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64" MultiBuildValue="Build:Windows XP x64, Windows XP x64 Service Pack 1, Windows XP x64 Service Pack 2, Windows Server 2003 x64, Windows Server 2003 x64 Service Pack 1, Windows Server 2003 x64 Service Pack 2, Windows Vista x64, Windows Vista x64 Service Pack 1, Windows Vista x64 Service Pack 2, Windows Server 2008 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64Display" MultiBuildValue="Build:Windows XP x64, Windows Server 2003 x64, Windows Vista x64, Windows Server 2008 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="Build:Windows 2000, Windows XP x86, Windows Server 2003 x86, Windows Vista x86, Windows Server 2008 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Media_Dir" Directory_Parent="APPDIR" DefaultDir="Media"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="Progra~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="TIM_Dir" Directory_Parent="ProgramMenuFolder" DefaultDir="TIM"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AxInterop.PCR300XLib.dll" ComponentId="{BAC1ED15-AA89-4F27-880E-9DA408F1779A}" Directory_="APPDIR" Attributes="0" KeyPath="AxInterop.PCR300XLib.dll"/>
+    <ROW Component="C__842260DFB81E41BE8911FDA952C7A046" ComponentId="{A255294D-BD15-4761-94E4-EE1D2FFA64B9}" Directory_="APPDIR" Attributes="4" KeyPath="_842260DFB81E41BE8911FDA952C7A046"/>
+    <ROW Component="C__D5F80949D0CC4F979B4256063AA302BE" ComponentId="{C2BA702F-FABC-4C8C-ABC2-CFCD8C9250A7}" Directory_="APPDIR" Attributes="4" KeyPath="_D5F80949D0CC4F979B4256063AA302BE"/>
+    <ROW Component="DeviceFramework.dll" ComponentId="{9678718B-AB49-4135-B61C-DD944CC50067}" Directory_="APPDIR" Attributes="0" KeyPath="DeviceFramework.dll"/>
+    <ROW Component="EpsonInstaller.dll" ComponentId="{F7A452BA-D7DA-4EF4-8B28-66A8E0EBB6BA}" Directory_="APPDIR" Attributes="0" KeyPath="EpsonInstaller.dll"/>
+    <ROW Component="EpsonStatusAPI.dll" ComponentId="{8679C505-A409-4321-8E6C-07BDBD499946}" Directory_="APPDIR" Attributes="0" KeyPath="EpsonStatusAPI.dll"/>
+    <ROW Component="FeCom.dll" ComponentId="{54C6D22F-7E2F-455D-99A7-51208B8049E4}" Directory_="APPDIR" Attributes="0" KeyPath="FeCom.dll"/>
+    <ROW Component="FeRwa.dll" ComponentId="{AB2D02BC-474B-4D0E-BD80-E40C97EF34DB}" Directory_="APPDIR" Attributes="0" KeyPath="FeRwa.dll"/>
+    <ROW Component="FeigIDRWA02.dll" ComponentId="{61C8A7DE-0F75-4DD6-847A-328DDF9FA2B8}" Directory_="APPDIR" Attributes="0" KeyPath="FeigIDRWA02.dll"/>
+    <ROW Component="GAT.Comms.FunLine.Manager.dll" ComponentId="{4BD93C6A-6D31-4291-A2CB-D8B939BA983D}" Directory_="APPDIR" Attributes="0" KeyPath="GAT.Comms.FunLine.Manager.dll"/>
+    <ROW Component="GAT.Comms.LEGIC.dll" ComponentId="{89CFF8B4-0256-4BD8-8179-A146623B4450}" Directory_="APPDIR" Attributes="0" KeyPath="GAT.Comms.LEGIC.dll"/>
+    <ROW Component="GAT.Comms.USB.dll" ComponentId="{569DFEDD-FF15-46B6-B5E8-F8E1E90A2891}" Directory_="APPDIR" Attributes="0" KeyPath="GAT.Comms.USB.dll"/>
+    <ROW Component="GAT.Utils.dll" ComponentId="{CFB52345-C302-4811-AAF0-7C92ECF9DB10}" Directory_="APPDIR" Attributes="0" KeyPath="GAT.Utils.dll"/>
+    <ROW Component="GantnerAccess6200.dll" ComponentId="{0A6A06CA-D57F-4BC4-9FE4-59D057F1EBFF}" Directory_="APPDIR" Attributes="0" KeyPath="GantnerAccess6200.dll"/>
+    <ROW Component="GantnerFunWriter5200.dll" ComponentId="{EC4FF1D7-E0EF-47C0-8263-BAF7927296DF}" Directory_="APPDIR" Attributes="0" KeyPath="GantnerFunWriter5200.dll"/>
+    <ROW Component="GigatekPCR300M.dll" ComponentId="{82CD9FEE-F53E-4191-8C12-1B72C2A03E6B}" Directory_="APPDIR" Attributes="0" KeyPath="GigatekPCR300M.dll"/>
+    <ROW Component="Interop.PCR300XLib.dll" ComponentId="{CEFA2716-79A5-44F4-A6EB-3D4743A243D4}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.PCR300XLib.dll"/>
+    <ROW Component="MotorolaDS6707.dll" ComponentId="{6FD6EA07-47C7-4E0C-954D-1A738B674ABF}" Directory_="APPDIR" Attributes="0" KeyPath="MotorolaDS6707.dll"/>
+    <ROW Component="PCR300x.ocx" ComponentId="{F43C6031-BAB7-402D-A487-5FF68DEB2150}" Directory_="APPDIR" Attributes="0" KeyPath="PCR300x.ocx"/>
+    <ROW Component="ProductInformation" ComponentId="{7BDE7DD8-94CA-4D10-AB1A-565BA866C447}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SNAPI.dll" ComponentId="{ADFE81E5-CEF9-4716-A6D5-1D585476142C}" Directory_="APPDIR" Attributes="0" KeyPath="SNAPI.dll"/>
+    <ROW Component="SetHttpCfg.dll" ComponentId="{4538225F-39DB-48C3-949F-C55C95AA24FB}" Directory_="APPDIR" Attributes="0" KeyPath="SetHttpCfg.dll"/>
+    <ROW Component="TIM" ComponentId="{2C0282A0-76BA-48C8-B42A-C4AC1E4F9F42}" Directory_="TIM_Dir" Attributes="0"/>
+    <ROW Component="TIMsDevices.exe" ComponentId="{0C23D4A2-8659-4346-B24A-C89632F71F96}" Directory_="APPDIR" Attributes="0" KeyPath="TIMsDevices.exe"/>
+    <ROW Component="log4net.dll" ComponentId="{A955EC21-6242-4154-9D9A-59A92BD6E6EC}" Directory_="APPDIR" Attributes="0" KeyPath="log4net.dll"/>
+    <ROW Component="msdn.ico" ComponentId="{D10C7174-945C-404F-8C67-C90D4EA294F6}" Directory_="APPDIR" Attributes="0" KeyPath="TIMAdministrator.exe.config" Type="0"/>
+    <ROW Component="okay.wav" ComponentId="{F245DAED-656E-4C1E-A163-CD70717A5538}" Directory_="Media_Dir" Attributes="0" KeyPath="okay.wav" Type="0"/>
+    <ROW Component="updater.exe" ComponentId="{05D69B21-13D5-4C0D-995D-FCEA41321FA2}" Directory_="APPDIR" Attributes="0" KeyPath="updater.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="DefaultFeature" Title="DefaultFeature" Display="2" Level="1" Directory_="APPDIR" Attributes="0" Components="C__842260DFB81E41BE8911FDA952C7A046 C__D5F80949D0CC4F979B4256063AA302BE"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AxInterop.PCR300XLib.dll DeviceFramework.dll EpsonInstaller.dll EpsonStatusAPI.dll FeCom.dll FeRwa.dll FeigIDRWA02.dll GAT.Comms.FunLine.Manager.dll GAT.Comms.LEGIC.dll GAT.Comms.USB.dll GAT.Utils.dll GantnerAccess6200.dll GantnerFunWriter5200.dll GigatekPCR300M.dll Interop.PCR300XLib.dll MotorolaDS6707.dll PCR300x.ocx ProductInformation SNAPI.dll SetHttpCfg.dll TIM TIMsDevices.exe log4net.dll msdn.ico okay.wav updater.exe"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AxInterop.PCR300XLib.dll" Component_="AxInterop.PCR300XLib.dll" FileName="AxInte~1.dll|AxInterop.PCR300XLib.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\AxInterop.PCR300XLib.dll" SelfReg="false" NextFile="FeCom.dll"/>
+    <ROW File="DeviceFramework.dll" Component_="DeviceFramework.dll" FileName="Device~1.dll|DeviceFramework.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\DeviceFramework.dll" SelfReg="false" NextFile="msdn.ico"/>
+    <ROW File="EpsonInstaller.dll" Component_="EpsonInstaller.dll" FileName="EpsonI~1.dll|EpsonInstaller.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="T:\DeviceFramework\EpsonInstaller\bin\x86\Release\EpsonInstaller.dll" SelfReg="false" NextFile="SetHttpCfg.dll"/>
+    <ROW File="EpsonStatusAPI.dll" Component_="EpsonStatusAPI.dll" FileName="EpsonS~1.dll|EpsonStatusAPI.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\EpsonStatusAPI.dll" SelfReg="false" NextFile="DeviceFramework.dll"/>
+    <ROW File="FeCom.dll" Component_="FeCom.dll" FileName="FeCom.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\FeCom.dll" SelfReg="false" NextFile="FeigIDRWA02.dll"/>
+    <ROW File="FeRwa.dll" Component_="FeRwa.dll" FileName="FeRwa.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\FeRwa.dll" SelfReg="false" NextFile="GantnerFunWriter5200.dll"/>
+    <ROW File="FeigIDRWA02.dll" Component_="FeigIDRWA02.dll" FileName="FeigID~1.dll|FeigIDRWA02.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\FeigIDRWA02.dll" SelfReg="false" NextFile="FeRwa.dll"/>
+    <ROW File="GAT.Comms.FunLine.Manager.dll" Component_="GAT.Comms.FunLine.Manager.dll" FileName="GATCOM~3.DLL|GAT.Comms.FunLine.Manager.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\GAT.Comms.FunLine.Manager.dll" SelfReg="false" NextFile="updater.exe"/>
+    <ROW File="GAT.Comms.LEGIC.dll" Component_="GAT.Comms.LEGIC.dll" FileName="GATCom~1.dll|GAT.Comms.LEGIC.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\GAT.Comms.LEGIC.dll" SelfReg="false" NextFile="GAT.Comms.USB.dll"/>
+    <ROW File="GAT.Comms.USB.dll" Component_="GAT.Comms.USB.dll" FileName="GATCom~2.dll|GAT.Comms.USB.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\GAT.Comms.USB.dll" SelfReg="false" NextFile="GAT.Utils.dll"/>
+    <ROW File="GAT.Utils.dll" Component_="GAT.Utils.dll" FileName="GATUti~1.dll|GAT.Utils.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\GAT.Utils.dll" SelfReg="false" NextFile="GigatekPCR300M.dll"/>
+    <ROW File="GantnerAccess6200.dll" Component_="GantnerAccess6200.dll" FileName="GANTNE~2.DLL|GantnerAccess6200.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\GantnerAccess6200.dll" SelfReg="false" NextFile="GAT.Comms.FunLine.Manager.dll"/>
+    <ROW File="GantnerFunWriter5200.dll" Component_="GantnerFunWriter5200.dll" FileName="Gantne~1.dll|GantnerFunWriter5200.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\GantnerFunWriter5200.dll" SelfReg="false" NextFile="GAT.Comms.LEGIC.dll"/>
+    <ROW File="GigatekPCR300M.dll" Component_="GigatekPCR300M.dll" FileName="Gigate~1.dll|GigatekPCR300M.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\GigatekPCR300M.dll" SelfReg="false" NextFile="Interop.PCR300XLib.dll"/>
+    <ROW File="Interop.PCR300XLib.dll" Component_="Interop.PCR300XLib.dll" FileName="Intero~1.dll|Interop.PCR300XLib.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\Interop.PCR300XLib.dll" SelfReg="false" NextFile="log4net.dll"/>
+    <ROW File="MotorolaDS6707.dll" Component_="MotorolaDS6707.dll" FileName="Motoro~1.dll|MotorolaDS6707.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\MotorolaDS6707.dll" SelfReg="false" NextFile="PCR300x.ocx"/>
+    <ROW File="PCR300x.ocx" Component_="PCR300x.ocx" FileName="PCR300x.ocx" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\PCR300x.ocx" SelfReg="false" NextFile="SNAPI.dll"/>
+    <ROW File="SNAPI.dll" Component_="SNAPI.dll" FileName="SNAPI.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\SNAPI.dll" SelfReg="false" NextFile="EpsonInstaller.dll"/>
+    <ROW File="SetHttpCfg.dll" Component_="SetHttpCfg.dll" FileName="SetHtt~1.dll|SetHttpCfg.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="T:\DeviceFramework\SetHttpCfg\bin\x86\Release\SetHttpCfg.dll" SelfReg="false" NextFile="TIMAdministrator.exe.config"/>
+    <ROW File="TIMAdministrator.exe.config" Component_="msdn.ico" FileName="TIM-Ad~1.con|TIM-Administrator.exe.config" Attributes="0" SourcePath="T:\TIM-Administrator\MembRel\bin\x86\Release\TIM-Administrator.exe.config" SelfReg="false" NextFile="EpsonStatusAPI.dll"/>
+    <ROW File="TIMsDevices.exe" Component_="TIMsDevices.exe" FileName="TIMs-D~1.exe|TIMs-Devices.exe" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\TIMs-Devices.exe" SelfReg="false" NextFile="okay.wav" DigSign="true"/>
+    <ROW File="log4net.dll" Component_="log4net.dll" FileName="log4net.dll" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\log4net.dll" SelfReg="false" NextFile="MotorolaDS6707.dll"/>
+    <ROW File="msdn.ico" Component_="msdn.ico" FileName="msdn.ico" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\msdn.ico" SelfReg="false" NextFile="TIMsDevices.exe"/>
+    <ROW File="okay.wav" Component_="okay.wav" FileName="okay.wav" Attributes="0" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release\Media\okay.wav" SelfReg="false" NextFile="GantnerAccess6200.dll"/>
+    <ROW File="updater.exe" Component_="updater.exe" FileName="TIMS-U~1.EXE|TIMs-Updater.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_STUBS&gt;updater.exe" SelfReg="false" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="Build" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="[|AI_AIP_FOLDER]\TIM-DeviceFramework-SetupFilesV[|ProductVersion]" PackageFileName="TIMs-Devices" Languages="de" InstallationType="2" CabsLocation="1" CompressCabs="false" PackageType="1" ExeIconPath="T:\TIM-Administrator\MembRel\msdn.ico" UseLargeSchema="true" ExeName="Setup" UACExecutionLevel="2"/>
+    <ATTRIBUTE name="CurrentBuild" value="Build"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_de.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW DigitalCertificate="TIMsSignature.pfx" TimeStampUrl="http://timestamp.verisign.com/scripts/timstamp.dll" SignerDescription="[|ProductName]" SignOptions="7" SignTool="0" EnableLUAPatching="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_ProcessTasks" Description="Erzeuge Aktionen um geplante Tasks auf dem lokalen Computer zu erstellen:" Template="Task Name: [1]" DescriptionLocId="ActionText.Description.AI_ProcessTasks" TemplateLocId="ActionText.Template.AI_ProcessTasks"/>
+    <ROW Action="AI_ProcessTasks2" Description="Erzeuge Aktionen um geplante Tasks auf dem lokalen Computer zu erstellen:" Template="Task Name: [1]" DescriptionLocId="ActionText.Description.AI_ProcessTasks" TemplateLocId="ActionText.Template.AI_ProcessTasks"/>
+    <ROW Action="AI_RemoveTasks" Description="Entferne geplante Task vom lokalen Computer" Template="Task Name: [1]" DescriptionLocId="ActionText.Description.AI_RemoveTasks" TemplateLocId="ActionText.Template.AI_RemoveTasks"/>
+    <ROW Action="AI_RemoveTasks2" Description="Entferne geplante Task vom lokalen Computer" Template="Task Name: [1]" DescriptionLocId="ActionText.Description.AI_RemoveTasks" TemplateLocId="ActionText.Template.AI_RemoveTasks"/>
+    <ROW Action="AI_RollbackTasks" Description="Zurücksetzen der geplanten Tasks auf dem lokalen Computer" Template="Task Name: [1]" DescriptionLocId="ActionText.Description.AI_RollbackTasks" TemplateLocId="ActionText.Template.AI_RollbackTasks"/>
+    <ROW Action="AI_RollbackTasks2" Description="Zurücksetzen der geplanten Tasks auf dem lokalen Computer" Template="Task Name: [1]" DescriptionLocId="ActionText.Description.AI_RollbackTasks" TemplateLocId="ActionText.Template.AI_RollbackTasks"/>
+    <ROW Action="AI_ScheduleTasks" Description="Plane Task auf dem lokalen Computer" Template="Task Name: [1]" DescriptionLocId="ActionText.Description.AI_ScheduleTasks" TemplateLocId="ActionText.Template.AI_ScheduleTasks"/>
+    <ROW Action="AI_ScheduleTasks2" Description="Plane Task auf dem lokalen Computer" Template="Task Name: [1]" DescriptionLocId="ActionText.Description.AI_ScheduleTasks" TemplateLocId="ActionText.Template.AI_ScheduleTasks"/>
+    <ROW Action="AI_UninstallTasks" Description="Erzeuge Aktionen um geplante Tasks vom lokalen Computer zu entfernen" DescriptionLocId="ActionText.Description.AI_UninstallTasks"/>
+    <ROW Action="AI_UninstallTasks2" Description="Erzeuge Aktionen um geplante Tasks vom lokalen Computer zu entfernen" DescriptionLocId="ActionText.Description.AI_UninstallTasks"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="aischeduler.dll" SourcePath="&lt;AI_CUSTACTS&gt;aischeduler.dll"/>
+    <ROW Name="aischeduler2.dll" SourcePath="&lt;AI_CUSTACTS&gt;aischeduler2.dll"/>
+    <ROW Name="dotNetCustAct.dll" SourcePath="&lt;AI_CUSTACTS&gt;dotNetCustAct.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="TIM_Dir" Component_="TIM" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER_2" Type="51" Source="SetHttpCfgInstallerInstall" Target="/LogFile= /ReqVersion=2.0.50727 /InstallType=notransaction /Action=Install &quot;[#SetHttpCfg.dll]&quot; &quot;[TempFolder]NetInstallerClass_Config.xml&quot;"/>
+    <ROW Action="AI_DATA_SETTER_3" Type="51" Source="SetHttpCfgInstallerUninstall" Target="/LogFile= /ReqVersion=2.0.50727 /InstallType=notransaction /Action=Uninstall &quot;[#SetHttpCfg.dll]&quot; &quot;[TempFolder]NetInstallerClass_Config.xml&quot;"/>
+    <ROW Action="AI_DATA_SETTER_4" Type="51" Source="EpsonInstallerInstall" Target="/LogFile= /ReqVersion=2.0.50727 /InstallType=notransaction /Action=Install &quot;[#EpsonInstaller.dll]&quot; &quot;[TempFolder]NetInstallerClass_Config.xml&quot;"/>
+    <ROW Action="AI_DATA_SETTER_5" Type="51" Source="EpsonInstallerUninstall" Target="/LogFile= /ReqVersion=2.0.50727 /InstallType=notransaction /Action=Uninstall &quot;[#EpsonInstaller.dll]&quot; &quot;[TempFolder]NetInstallerClass_Config.xml&quot;"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_ProcessTasks" Type="1" Source="aischeduler.dll" Target="ProcessTasks"/>
+    <ROW Action="AI_ProcessTasks2" Type="1" Source="aischeduler2.dll" Target="ProcessTasks"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveTasks" Type="11265" Source="aischeduler.dll" Target="DeleteTasks" WithoutSeq="true"/>
+    <ROW Action="AI_RemoveTasks2" Type="11265" Source="aischeduler2.dll" Target="DeleteTasks" WithoutSeq="true"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RollbackTasks" Type="11521" Source="aischeduler.dll" Target="DeleteTasks" WithoutSeq="true"/>
+    <ROW Action="AI_RollbackTasks2" Type="11521" Source="aischeduler2.dll" Target="DeleteTasks" WithoutSeq="true"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_ScheduleTasks" Type="11265" Source="aischeduler.dll" Target="ScheduleTasks" WithoutSeq="true"/>
+    <ROW Action="AI_ScheduleTasks2" Type="11265" Source="aischeduler2.dll" Target="ScheduleTasks" WithoutSeq="true"/>
+    <ROW Action="AI_UPDATER_SERVICE_CONFIG" Type="3090" Source="updater.exe" Target="/configservice -name &quot;TIM&apos;s Updater für Device Framework&quot;"/>
+    <ROW Action="AI_UPDATER_UNINSTALL" Type="82" Source="updater.exe" Target="/clean silent"/>
+    <ROW Action="AI_UninstallTasks" Type="1" Source="aischeduler.dll" Target="UninstallTasks"/>
+    <ROW Action="AI_UninstallTasks2" Type="1" Source="aischeduler2.dll" Target="UninstallTasks"/>
+    <ROW Action="EpsonInstallerInstall" Type="3585" Source="dotNetCustAct.dll" Target="LaunchDotNetCustomAction" Options="3" AdditionalSeq="AI_DATA_SETTER_4"/>
+    <ROW Action="EpsonInstallerUninstall" Type="3073" Source="dotNetCustAct.dll" Target="LaunchDotNetCustomAction" Options="3" AdditionalSeq="AI_DATA_SETTER_5"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\Devices"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+    <ROW Action="SetHttpCfgInstallerInstall" Type="3585" Source="dotNetCustAct.dll" Target="LaunchDotNetCustomAction" Options="3" AdditionalSeq="AI_DATA_SETTER_2"/>
+    <ROW Action="SetHttpCfgInstallerUninstall" Type="3073" Source="dotNetCustAct.dll" Target="LaunchDotNetCustomAction" Options="3" AdditionalSeq="AI_DATA_SETTER_3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="msdn.exe" SourcePath="T:\TIM-Administrator\MembRel\msdn.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="AppDir" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="AppDir" Value="[APPDIR]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="ApplicationName" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="ApplicationName" Value="[ProductName]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="ApplicationVersion" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="ApplicationVersion" Value="[ProductVersion]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="CheckFrequency" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="CheckFrequency" Value="1" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="CompanyName" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="CompanyName" Value="[Manufacturer]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="DefaultCommandLine" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="DefaultCommandLine" Value="/silentall -nofreqcheck" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="DownloadsFolder" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="DownloadsFolder" Value="[CommonAppDataFolder][Manufacturer]\[ProductName]\updates\" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="Flags" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="Flags" Value="VertSplitter|PerMachine|ShowConfigOptionsButton" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="ID" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="ID" Value="[UpgradeCode]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="SupportServiceName" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="SupportServiceName" Value="TIM&apos;s Updater für Device Framework" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="URL" FileName="TIMS-U~1.INI|TIMs-Updater.ini" DirProperty="APPDIR" Section="General" Key="URL" Value="http://wanapp02/updates/updates.txt" Action="0" Component_="updater.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="SetHttpCfgInstallerInstall" Condition="( NOT Installed )" Sequence="6404"/>
+    <ROW Action="AI_DATA_SETTER_2" Condition="( NOT Installed )" Sequence="6403"/>
+    <ROW Action="EpsonInstallerInstall" Condition="( NOT Installed )" Sequence="6402"/>
+    <ROW Action="AI_DATA_SETTER_4" Condition="( NOT Installed )" Sequence="6401"/>
+    <ROW Action="EpsonInstallerUninstall" Condition="( Installed AND ( REMOVE = &quot;ALL&quot; OR AI_INSTALL_MODE = &quot;Remove&quot; ) )" Sequence="1602"/>
+    <ROW Action="AI_DATA_SETTER_5" Condition="( Installed AND ( REMOVE = &quot;ALL&quot; OR AI_INSTALL_MODE = &quot;Remove&quot; ) )" Sequence="1601"/>
+    <ROW Action="SetHttpCfgInstallerUninstall" Condition="( Installed AND ( REMOVE = &quot;ALL&quot; OR AI_INSTALL_MODE = &quot;Remove&quot; ) )" Sequence="1604"/>
+    <ROW Action="AI_DATA_SETTER_3" Condition="( Installed AND ( REMOVE = &quot;ALL&quot; OR AI_INSTALL_MODE = &quot;Remove&quot; ) )" Sequence="1603"/>
+    <ROW Action="AI_UPDATER_UNINSTALL" Condition="($updater.exe = 2) AND (?updater.exe = 3) AND NOT (UPGRADINGPRODUCTCODE)" Sequence="1551"/>
+    <ROW Action="AI_ProcessTasks" Condition="REMOVE&lt;&gt;&quot;ALL&quot;" Sequence="1623"/>
+    <ROW Action="AI_UninstallTasks" Condition="REMOVE=&quot;ALL&quot;" Sequence="1698"/>
+    <ROW Action="AI_ProcessTasks2" Condition="(VersionNT &gt;= 600) AND (REMOVE&lt;&gt;&quot;ALL&quot;)" Sequence="1624"/>
+    <ROW Action="AI_UninstallTasks2" Condition="(VersionNT &gt;= 600) AND (REMOVE=&quot;ALL&quot;)" Sequence="1699"/>
+    <ROW Action="AI_UPDATER_SERVICE_CONFIG" Condition="( ( ( NOT Installed AND VersionNT) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; AND VersionNT) ) AND ($updater.exe = 3) )" Sequence="5801"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+    <ROW Action="AI_DpiContentScale" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 502) OR (((VersionNT64 = 502) AND (ServicePackLevel &gt;= 1)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 502) OR (((VersionNT64 = 502) AND (ServicePackLevel &lt;&gt; 1)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 502) OR (((VersionNT64 = 502) AND (ServicePackLevel &lt;&gt; 2)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 502) OR ((VersionNT64 = 502) AND ((MsiNTProductType = 1) OR (ServicePackLevel &gt;= 1)))) AND ((VersionNT64 &lt;&gt; 502) OR ((VersionNT64 = 502) AND ((MsiNTProductType = 1) OR (ServicePackLevel &lt;&gt; 1)))) AND ((VersionNT64 &lt;&gt; 502) OR ((VersionNT64 = 502) AND ((MsiNTProductType = 1) OR (ServicePackLevel &lt;&gt; 2)))) AND ((VersionNT64 &lt;&gt; 600) OR (((VersionNT64 = 600) AND (ServicePackLevel &gt;= 1)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 600) OR (((VersionNT64 = 600) AND (ServicePackLevel &lt;&gt; 1)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 600) OR (((VersionNT64 = 600) AND (ServicePackLevel &lt;&gt; 2)) OR (MsiNTProductType &lt;&gt; 1))) AND ((VersionNT64 &lt;&gt; 600) OR ((VersionNT64 = 600) AND (MsiNTProductType = 1))) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]" DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="Build"/>
+    <ROW Condition="( Version9X OR VersionNT64 OR ( VersionNT AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &gt;= 1))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 1))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 2))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 3))) AND ((VersionNT &lt;&gt; 500) OR ((VersionNT = 500) AND (ServicePackLevel &lt;&gt; 4))) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &gt;= 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &lt;&gt; 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &lt;&gt; 2))) OR VersionNT64) AND (((VersionNT &lt;&gt; 501) OR ((VersionNT = 501) AND (ServicePackLevel &lt;&gt; 3))) OR VersionNT64) AND (((VersionNT &lt;&gt; 502) OR ((VersionNT = 502) AND (ServicePackLevel &gt;= 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 502) OR ((VersionNT = 502) AND (ServicePackLevel &lt;&gt; 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 502) OR ((VersionNT = 502) AND (ServicePackLevel &lt;&gt; 2))) OR VersionNT64) AND (((VersionNT &lt;&gt; 600) OR (((VersionNT = 600) AND (ServicePackLevel &gt;= 1)) OR (MsiNTProductType &lt;&gt; 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 600) OR (((VersionNT = 600) AND (ServicePackLevel &lt;&gt; 1)) OR (MsiNTProductType &lt;&gt; 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 600) OR (((VersionNT = 600) AND (ServicePackLevel &lt;&gt; 2)) OR (MsiNTProductType &lt;&gt; 1))) OR VersionNT64) AND (((VersionNT &lt;&gt; 600) OR ((VersionNT = 600) AND ((MsiNTProductType = 1) OR ((WindowsBuild &lt;&gt; 6001) AND (WindowsBuild &lt;&gt; 6002))))) OR VersionNT64) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNTDisplay]" DescriptionLocId="AI.LaunchCondition.NoSpecificNT" IsPredefined="true" Builds="Build"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT40Display]" DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="Build"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="Build"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="_842260DFB81E41BE8911FDA952C7A046" Root="2" Key="Software\MeridianSpa GmbH\TIMs-Devices" Name="TargetDir" Value="[TARGETDIR]" Component_="C__842260DFB81E41BE8911FDA952C7A046"/>
+    <ROW Registry="_D5F80949D0CC4F979B4256063AA302BE" Root="2" Key="Software\Microsoft\Windows\CurrentVersion\Run" Name="TIMs-Devices" Value="&quot;[TARGETDIR]TIMs-Devices.exe&quot;" Component_="C__D5F80949D0CC4F979B4256063AA302BE"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiServCtrlComponent">
+    <ROW ServiceControl="updater" Name="TIM&apos;s Updater für Device Framework" Event="160" Wait="1" Component_="updater.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiServInstComponent">
+    <ROW ServiceInstall="updater" Name="TIM&apos;s Updater für Device Framework" DisplayName="TIM&apos;s Updater für Device Framework" ServiceType="16" StartType="3" ErrorControl="1" Arguments="/runservice" Component_="updater.exe" Description="TIM-Dienst zur regelmäßigen Überprüfung und Installation von Updates"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="TIMsDevices" Directory_="TIM_Dir" Name="TIM&apos;sD~1|TIM&apos;s Devices" Component_="TIMsDevices.exe" Target="[#TIMsDevices.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.ScheduledTasksComponent">
+    <ROW TaskId="AI_updater" TaskName="TIMs-Updater für Device Framework" Run="[#updater.exe]" WorkDir="[APPDIR]" UserProp="SYSTEM" StartTime="0" Flags="32768" Trigger="5|1|1|1|0|0|0|" Condition="1" TaskVersion="2.0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
+    <ROW Directory_="APPDIR" SourcePath="T:\DeviceFramework\TIMs-Devices\bin\x86\Release" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store|/*.pdb|/*.vshost.*|/TIMs-Devices.exe.config" ExcludeFlags="6"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.UpdaterComponent">
+    <ROW Updater="updater.exe" URL="URL" SearchFreq="CheckFrequency" DownloadsFolder="DownloadsFolder" ID="ID" TargetDir="AppDir" AppName="ApplicationName" AppVersion="ApplicationVersion" CompanyName="CompanyName" DefCommandLine="DefaultCommandLine" SupportServiceName="SupportServiceName" Flags="Flags" IconIndex="0" UnistallCASeq="AI_UPDATER_UNINSTALL" SupportServiceCASeq="AI_UPDATER_SERVICE_CONFIG" SupportService="updater" SupportServiceCtrl="updater" TaskId="AI_updater" Description="[|UpdaterName] [|ProductVersion] © [|Manufacturer], Inc, 2014"/>
+  </COMPONENT>
+</DOCUMENT>

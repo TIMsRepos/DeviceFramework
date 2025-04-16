@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.meridianspa.de/TIM/DeviceFramework" elementFormDefault="qualified" targetNamespace="http://schemas.meridianspa.de/TIM/DeviceFramework" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Communication" />
+  <xs:element name="AddIDeviceClient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intConfigDevices" type="xs:int" />
+        <xs:element minOccurs="0" name="strName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddIDeviceClientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddIDeviceClientResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddIDeviceClient2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="intConfigDevices" type="xs:int" />
+        <xs:element minOccurs="0" name="strName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bytVersion" type="xs:unsignedByte" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddIDeviceClient2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddIDeviceClient2Result" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceNames">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceNamesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetDeviceNamesResult" nillable="true" type="q1:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Request">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnblockLockerKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceFrameworkDeviceID" type="xs:int" />
+        <xs:element minOccurs="0" name="unblock" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnblockLockerKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UnblockLockerKeyResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FireMediaDetected">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Communication" minOccurs="0" name="e" nillable="true" type="q2:MediaDetectedEventArgs" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FireMediaDetected2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Communication" minOccurs="0" name="e" nillable="true" type="q3:MediaDetectedEventArgs2" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FireMediaRemoved">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Communication" minOccurs="0" name="e" nillable="true" type="q4:MediaRemovedEventArgs" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FireMediaRemoved2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Communication" minOccurs="0" name="e" nillable="true" type="q5:MediaRemovedEventArgs2" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FireMissingMedia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strDeviceName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReleaseResources">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsFloating">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsFloatingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsFloatingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Pong">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PongResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

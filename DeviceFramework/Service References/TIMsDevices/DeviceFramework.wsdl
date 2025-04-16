@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://schemas.meridianspa.de/TIM/DeviceFramework" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://schemas.meridianspa.de/TIM/DeviceFramework" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://schemas.meridianspa.de/TIM/DeviceFramework/Imports">
+      <xsd:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd0" namespace="http://schemas.meridianspa.de/TIM/DeviceFramework" />
+      <xsd:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Communication" />
+      <xsd:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:54321/DeviceFramework?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/TIM.Devices.Framework.Common" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDeviceServer_AddIDeviceClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddIDeviceClient" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_AddIDeviceClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddIDeviceClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_AddIDeviceClient2_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddIDeviceClient2" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_AddIDeviceClient2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddIDeviceClient2Response" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_GetDeviceNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceNames" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_GetDeviceNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_Request_InputMessage">
+    <wsdl:part name="parameters" element="tns:Request" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_Request_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_UnblockLockerKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnblockLockerKey" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_UnblockLockerKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnblockLockerKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_FireMediaDetected_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:FireMediaDetected" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_FireMediaDetected2_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:FireMediaDetected2" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_FireMediaRemoved_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:FireMediaRemoved" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_FireMediaRemoved2_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:FireMediaRemoved2" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_FireMissingMedia_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:FireMissingMedia" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_ReleaseResources_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ReleaseResources" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_IsFloating_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:IsFloating" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_IsFloating_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:IsFloatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_Pong_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:Pong" />
+  </wsdl:message>
+  <wsdl:message name="IDeviceServer_Pong_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:PongResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IDeviceServer">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddIDeviceClient">
+      <wsdl:input wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/AddIDeviceClient" message="tns:IDeviceServer_AddIDeviceClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/AddIDeviceClientResponse" message="tns:IDeviceServer_AddIDeviceClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddIDeviceClient2">
+      <wsdl:input wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/AddIDeviceClient2" message="tns:IDeviceServer_AddIDeviceClient2_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/AddIDeviceClient2Response" message="tns:IDeviceServer_AddIDeviceClient2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetDeviceNames">
+      <wsdl:input wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/GetDeviceNames" message="tns:IDeviceServer_GetDeviceNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/GetDeviceNamesResponse" message="tns:IDeviceServer_GetDeviceNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Request">
+      <wsdl:input wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/Request" message="tns:IDeviceServer_Request_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/RequestResponse" message="tns:IDeviceServer_Request_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="UnblockLockerKey">
+      <wsdl:input wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/UnblockLockerKey" message="tns:IDeviceServer_UnblockLockerKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/UnblockLockerKeyResponse" message="tns:IDeviceServer_UnblockLockerKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="FireMediaDetected">
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/FireMediaDetected" message="tns:IDeviceServer_FireMediaDetected_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="FireMediaDetected2">
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/FireMediaDetected2" message="tns:IDeviceServer_FireMediaDetected2_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="FireMediaRemoved">
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/FireMediaRemoved" message="tns:IDeviceServer_FireMediaRemoved_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="FireMediaRemoved2">
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/FireMediaRemoved2" message="tns:IDeviceServer_FireMediaRemoved2_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="FireMissingMedia">
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/FireMissingMedia" message="tns:IDeviceServer_FireMissingMedia_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="ReleaseResources">
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/ReleaseResources" message="tns:IDeviceServer_ReleaseResources_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="IsFloating">
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/IsFloating" message="tns:IDeviceServer_IsFloating_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/IsFloatingResponse" message="tns:IDeviceServer_IsFloating_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Pong">
+      <wsdl:output wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/Pong" message="tns:IDeviceServer_Pong_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://schemas.meridianspa.de/TIM/DeviceFramework/IDeviceServer/PongResponse" message="tns:IDeviceServer_Pong_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

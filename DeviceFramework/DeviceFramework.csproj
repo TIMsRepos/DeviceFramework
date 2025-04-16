@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0B87BE2-D2BE-41C0-A865-60F1F83815EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TIM.Devices.Framework</RootNamespace>
+    <AssemblyName>DeviceFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Retail|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Retail\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Retail|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Retail\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EpsonStatusAPI, Version=4.0.11.0, Culture=neutral, PublicKeyToken=46bb02e1480038cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\EpsonStatusAPI.DLL</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TIM.Common.CoreStandard, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TIM\Common\CoreStandard\bin\x86\Debug\TIM.Common.CoreStandard.dll</HintPath>
+    </Reference>
+    <Reference Include="TIM.Common.Data">
+      <HintPath>..\..\TIM\Common\Data\bin\x86\Debug\TIM.Common.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\TIMs-Devices\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common\Enumerations\ConfigDevices.cs" />
+    <Compile Include="Common\Enumerations\DeviceIDs.cs" />
+    <Compile Include="Common\Enumerations\PDFReaderTypes.cs" />
+    <Compile Include="Common\Enumerations\PersonStati.cs" />
+    <Compile Include="Common\Extensions\ExceptionExtensions.cs" />
+    <Compile Include="Common\Extensions\PrinterTypeExtensions.cs" />
+    <Compile Include="Common\Extensions\StringExtensions.cs" />
+    <Compile Include="Common\Input\MouseMessageFilter.cs" />
+    <Compile Include="Common\Printer\PrinterEnums\PrinterTypeAdmin.cs" />
+    <Compile Include="Common\Settings\enmPrinterSettingDetail.cs" />
+    <Compile Include="Common\Settings\SettingsHelper.cs" />
+    <Compile Include="Common\ProcessHelper.cs" />
+    <Compile Include="Common\Temp\TempFileManager.cs" />
+    <Compile Include="Communication\MediaDetectedEventArgs.cs" />
+    <Compile Include="Communication\MediaRemovedEventArgs.cs" />
+    <Compile Include="Database\ComputerSettingController.cs" />
+    <Compile Include="Database\DatabaseHelper.cs" />
+    <Compile Include="Database\DeviceDetailController.cs" />
+    <Compile Include="Database\QryServiceEmployeeController.cs" />
+    <Compile Include="ElectronicCash\ZVT\Helper\BitmapHelper.cs" />
+    <Compile Include="ElectronicCash\ZVT\Helper\TraceEntry.cs" />
+    <Compile Include="ElectronicCash\ZVT\TransportLayers\IPTransportLayer.cs" />
+    <Compile Include="ElectronicCash\ZVT\ZVTEnums.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Turnstiles\ITurnstile.cs" />
+    <Compile Include="Turnstiles\TurnstileEventArgs.cs" />
+    <Compile Include="UserAccountControl\ActiveDirectory\ADEntry.cs" />
+    <Compile Include="UserAccountControl\Enumerations.cs" />
+    <Compile Include="UserAccountControl\UACEntry.cs" />
+    <Compile Include="UserAccountControl\UACHelper.cs" />
+    <Compile Include="AssemblyMissingException.cs" />
+    <Compile Include="Common\AppHelper.cs" />
+    <Compile Include="Common\Enumerations\Applications.cs" />
+    <Compile Include="Common\DateTimeRange.cs" />
+    <Compile Include="Common\Enumerations\DeviceCapabilities.cs" />
+    <Compile Include="Common\DeviceMediaDetectedEventArgs2.cs" />
+    <Compile Include="Common\DeviceMediaRemovedEventArgs2.cs" />
+    <Compile Include="Common\Enumerations\DocTypes.cs" />
+    <Compile Include="Common\ExceptionEventArgs.cs" />
+    <Compile Include="Common\Extensions\ArrayExtensions.cs" />
+    <Compile Include="Common\Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Common\FileDialogFilter.cs" />
+    <Compile Include="Common\FilterManager.cs" />
+    <Compile Include="Common\Container.cs" />
+    <Compile Include="Common\DeviceEventArgs.cs" />
+    <Compile Include="Common\DeviceException.cs" />
+    <Compile Include="Common\EventHelper.cs" />
+    <Compile Include="Common\GenericEventArgs.cs" />
+    <Compile Include="Common\IDevice.cs" />
+    <Compile Include="Common\Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Common\Input\CancelableExtendedMouseEventArgs.cs" />
+    <Compile Include="Common\Input\ExtendedMouseEventArgs.cs" />
+    <Compile Include="Common\Install\BaseRegistryInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MissingMediaException.cs" />
+    <Compile Include="Common\Enumerations\Payloads.cs" />
+    <Compile Include="Common\PDFReader.cs" />
+    <Compile Include="Common\Printer\PrinterExceptions\PrinterException.cs" />
+    <Compile Include="Common\Printer\PrinterHelper.cs" />
+    <Compile Include="Common\Printer\PrinterEnums\PrinterStatus.cs" />
+    <Compile Include="Common\Printer\PrinterEnums\PrinterTypeFrontend.cs" />
+    <Compile Include="Common\Settings\Architecture.cs" />
+    <Compile Include="Common\Settings\ConfigString.cs" />
+    <Compile Include="Common\Settings\ConfigStringDescription.cs" />
+    <Compile Include="Common\Settings\enmComputerSetting.cs" />
+    <Compile Include="Common\Settings\SettingNotFoundException.cs" />
+    <Compile Include="Common\Settings\SettingsException.cs" />
+    <Compile Include="Common\Settings\SettingsManager.cs" />
+    <Compile Include="Common\Temp\GenerateFileNameEventArgs.cs" />
+    <Compile Include="Common\Temp\ReleasingFailedEventArgs.cs" />
+    <Compile Include="Common\Threading\Loader.cs" />
+    <Compile Include="Common\Threading\LoaderLoadTaskEventArgs.cs" />
+    <Compile Include="Common\Threading\LoadTask.cs" />
+    <Compile Include="Common\WinFormsHelper.cs" />
+    <Compile Include="Common\Workflows.cs" />
+    <Compile Include="Communication\DeviceClient.cs" />
+    <Compile Include="Communication\DeviceClientException.cs" />
+    <Compile Include="Communication\DeviceServer.cs" />
+    <Compile Include="Communication\DeviceServerNotFoundException.cs" />
+    <Compile Include="Communication\IDeviceClient.cs" />
+    <Compile Include="Communication\IDeviceServer.cs" />
+    <Compile Include="Communication\MediaDetectedEventArgs2.cs" />
+    <Compile Include="Communication\MediaRemovedEventArgs2.cs" />
+    <Compile Include="Communication\MissingMediaEventArgs.cs" />
+    <Compile Include="Communication\TIMsDevicesHelper.cs" />
+    <Compile Include="ComputerSubsidiaryException.cs" />
+    <Compile Include="ConfigDevicesExtensions.cs" />
+    <Compile Include="Database\DBContext.cs" />
+    <Compile Include="DeviceManager.cs" />
+    <Compile Include="InternalDeviceEventArgs\DeviceManagerEventArgs.cs" />
+    <Compile Include="InternalDeviceEventArgs\DeviceManagerMediaDetectedEventArgs2.cs" />
+    <Compile Include="InternalDeviceEventArgs\DeviceManagerMediaRemovedEventArgs2.cs" />
+    <Compile Include="DeviceSubscription.cs" />
+    <Compile Include="ElectronicCash\ZVT\Helper\BCDCodeHelper.cs" />
+    <Compile Include="ElectronicCash\ZVT\Blocks\Abstract\APDU.cs" />
+    <Compile Include="ElectronicCash\ZVT\Blocks\Abstract\ControlField.cs" />
+    <Compile Include="ElectronicCash\ZVT\Blocks\CommandAPDU.cs" />
+    <Compile Include="ElectronicCash\ZVT\Blocks\CommandControlField.cs" />
+    <Compile Include="ElectronicCash\ZVT\Blocks\ResponseAPDU.cs" />
+    <Compile Include="ElectronicCash\ZVT\Blocks\ResponseControlField.cs" />
+    <Compile Include="ElectronicCash\ZVT\Helper\CRCHelper.cs" />
+    <Compile Include="ElectronicCash\ZVT\InterimStates.cs" />
+    <Compile Include="ElectronicCash\ZVT\Helper\LVarHelper.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\PaymentTerminal.cs" />
+    <Compile Include="ElectronicCash\ZVT\ErrorMessages.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\Events\PostStateInfoEventArgs.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\Events\InterimStateInfoEventArgs.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\Events\StateInfoEventArgs.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\ITerminal.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\SimpleTerminal.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\Exceptions\TerminalCanceledException.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\Exceptions\TerminalException.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\Exceptions\TerminalNotAvailableException.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\Exceptions\TerminalNotReadyException.cs" />
+    <Compile Include="ElectronicCash\ZVT\Terminals\Exceptions\TerminalWrongConfigException.cs" />
+    <Compile Include="ElectronicCash\ZVT\Helper\TraceHelper.cs" />
+    <Compile Include="ElectronicCash\ZVT\TransportLayers\ComTransportLayer.cs" />
+    <Compile Include="ElectronicCash\ZVT\TransportLayers\ITransportLayer.cs" />
+    <Compile Include="ElectronicCash\ZVT\TransportLayers\TransportLayerException.cs" />
+    <Compile Include="ElectronicCash\ZVT\ZVTException.cs" />
+    <Compile Include="Epson\ThermalPrinter.cs" />
+    <Compile Include="Epson\ThermalPrinterException.cs" />
+    <Compile Include="Epson\ThermalPrinterNotReadyException.cs" />
+    <Compile Include="Epson\ThermalPrinterPrintFailedException.cs" />
+    <Compile Include="FrameworkException.cs" />
+    <Compile Include="Loader\AssemblyItem.cs" />
+    <Compile Include="Loader\InstanceBuilder.cs" />
+    <Compile Include="Loader\TypeCatalog.cs" />
+    <Compile Include="Loader\TypeCatalogItem.cs" />
+    <Compile Include="Notifier.cs" />
+    <Compile Include="ObjectManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TIMsDevices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Enumerations\DataSourceType.cs" />
+    <Compile Include="Common\Threading\ThreadManager.cs" />
+    <Compile Include="Database\TIMDataClasses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TIMDataClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Turnstiles\TurnstileHelper.cs" />
+    <Compile Include="Win32\Win32Helper.cs" />
+    <Compile Include="Win32\WinSpool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="Service References\TIMsDevices\DeviceFramework5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\TIMDataClasses.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>TIMDataClasses.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TIMsDevices\DeviceFramework.wsdl" />
+    <None Include="Service References\TIMsDevices\DeviceFramework.xsd" />
+    <None Include="Service References\TIMsDevices\DeviceFramework1.xsd" />
+    <None Include="Service References\TIMsDevices\DeviceFramework2.xsd" />
+    <None Include="Service References\TIMsDevices\DeviceFramework3.xsd" />
+    <None Include="Service References\TIMsDevices\DeviceServer.wsdl" />
+    <None Include="Database\TIMDataClasses.dbml.layout">
+      <DependentUpon>TIMDataClasses.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\TIMsDevices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TIMsDevices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\TIMsDevices\DeviceFramework4.xsd" />
+    <None Include="Service References\TIMsDevices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ElectronicCash\ZVT\ClassDiagram.cd" />
+    <None Include="Service References\TIMsDevices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package_system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ElectronicCash\ZVT\ZVT Trace Example.txt" />
+    <Content Include="EpsonStatusAPI.DLL">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\button_cancel.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
